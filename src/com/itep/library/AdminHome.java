@@ -1,7 +1,8 @@
 package com.itep.library;
 import java.awt.*;
 import javax.swing.*;
-public class AdminHome extends JFrame{
+import java.awt.event.*;
+public class AdminHome extends JFrame implements ActionListener{
 
 	JLabel bgimg;
 	JTextArea header;
@@ -17,6 +18,7 @@ public class AdminHome extends JFrame{
 		JMenuBar mb=new JMenuBar();  
         menu=new JMenu("::"); 
         abook=new JMenu("Add Books");
+       
         UpdateBooks=new JMenu("UpdateBook");
         AddUser=new JMenu("AddUser");
         UpdateUser=new JMenu("UpdateUser");
@@ -62,6 +64,11 @@ public class AdminHome extends JFrame{
 		
 	}
 
+	public void actionPerformed(ActionEvent ae)
+	{
+		
+	}
+	
 	public static void main(String[] args) {
 		
 		new AdminHome();
