@@ -6,8 +6,9 @@ public class AdminHome extends JFrame implements ActionListener{
 
 	JLabel bgimg;
 	JTextArea header;
-	JMenu menu, submenu,abook,UpdateBooks,AddUser,UpdateUser;  
-    JMenuItem i1, i2, i3, i4, i5;  
+	JButton abook,UpdateBooks,AddUser,UpdateUser,view,edit,logOut;
+	JMenu menu, submenu;  
+    
 	public AdminHome() {
 		
 		setVisible(true);
@@ -16,24 +17,34 @@ public class AdminHome extends JFrame implements ActionListener{
 		
 				
 		JMenuBar mb=new JMenuBar();  
-        menu=new JMenu("::"); 
-        abook=new JMenu("Add Books");
-       
-        UpdateBooks=new JMenu("UpdateBook");
-        AddUser=new JMenu("AddUser");
-        UpdateUser=new JMenu("UpdateUser");
-        submenu=new JMenu("Sub Menu");  
-        i1=new JMenuItem("Item 1");  
-        i2=new JMenuItem("Item 2");  
-        i3=new JMenuItem("Item 3");  
-        i4=new JMenuItem("Item 4");  
-        i5=new JMenuItem("Item 5"); 
+        menu=new JMenu("MENU"); 
+        abook=new JButton("Add Books");
+        abook.setBackground(Color.white);
+        abook.addActionListener(this);
+        UpdateBooks=new JButton("UpdateBook");
+        UpdateBooks.setBackground(Color.white);
+        UpdateBooks.addActionListener(this);
+        AddUser=new JButton("AddUser");
+        AddUser.setBackground(Color.white);
+        AddUser.addActionListener(this);
+        UpdateUser=new JButton("UpdateUser");
+        UpdateUser.setBackground(Color.white);
+        UpdateUser.addActionListener(this);
+        view=new JButton("View    ");
+        view.setBackground(Color.white);
+        view.addActionListener(this);
+        edit=new JButton("Edit    ");
+        edit.setBackground(Color.white);
+        edit.addActionListener(this);
+        logOut=new JButton("LogOut");
+        logOut.setBackground(Color.white);
+        logOut.addActionListener(this);
         
-        menu.add(i1); 
-        menu.add(i2); 
-        menu.add(i3);  
-        submenu.add(i4); 
-        submenu.add(i5);  
+        submenu=new JMenu("Profile");  
+        submenu.add(view); 
+        submenu.add(edit); 
+        submenu.add(logOut);
+          
         menu.add(submenu);
         mb.add(menu); 
         mb.add(abook);
@@ -41,14 +52,14 @@ public class AdminHome extends JFrame implements ActionListener{
         mb.add(AddUser);
         mb.add(UpdateUser);  
         mb.setBounds(10,10,1260,40);
-        //add(mb);
+       
 		
         
         header=new JTextArea();
 		header.setBounds(0,0,1400,60);
 		header.setBackground(Color.lightGray);
 		header.setEditable(false);
-		//add(header);
+		
 		
 		
 		ImageIcon i11=new ImageIcon("library.jpg");
@@ -66,7 +77,13 @@ public class AdminHome extends JFrame implements ActionListener{
 
 	public void actionPerformed(ActionEvent ae)
 	{
+		if(ae.getSource()==abook)
+		{
+			
+			AddBook a=new AddBook();
+			a.setLocation(100,150);
 		
+		}
 	}
 	
 	public static void main(String[] args) {
