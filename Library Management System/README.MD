@@ -15,12 +15,13 @@
 <li>The user interacts with various forms and dialogs to manage library data, such as books and members.</li>
 <br>
 <h5>Backend (MySQL):</h5>
-A MySQL database serves as the backend to store and retrieve data like book details, user records, transactions, etc.
-Business Logic:
-Java classes handle the core functionality, including database connectivity, data processing, and interaction between the frontend and backend.
-2. Modules of the Library Management System:
-2.1. User Module:
-Admin Users:
+<li>A MySQL database serves as the backend to store and retrieve data like book details, user records, transactions, etc.</li>
+<h5>Business Logic:<h5>
+<li>Java classes handle the core functionality, including database connectivity, data processing, and interaction between the frontend and backend.</li>
+
+<h3>2. Modules of the Library Management System:</h3>
+<h5>2.1. User Module:</h5>
+<h5>Admin Users:</h5>
 Admins can add, update, and delete books, members, and other system users.
 They also manage the issue and return process.
 Library Members:
