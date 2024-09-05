@@ -9,10 +9,12 @@
 <div>
 <h3>Overview</h3>
 <div>
-1. Architecture Overview:
-Frontend (Java Swing & AWT):
-Java Swing and AWT components are used to create the graphical user interface (GUI). The user interacts with various forms and dialogs to manage library data, such as books and members.
-Backend (MySQL):
+<h3>1. Architecture Overview:</h3>
+<h5>Frontend (Java Swing & AWT):</h5>
+<li>Java Swing and AWT components are used to create the graphical user interface (GUI). </li>
+<li>The user interacts with various forms and dialogs to manage library data, such as books and members.</li>
+<br>
+<h5>Backend (MySQL):</h5>
 A MySQL database serves as the backend to store and retrieve data like book details, user records, transactions, etc.
 Business Logic:
 Java classes handle the core functionality, including database connectivity, data processing, and interaction between the frontend and backend.
