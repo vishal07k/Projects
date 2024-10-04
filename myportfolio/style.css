@@ -339,7 +339,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(Images/Image1.jpg);
+        background-image: url(https://github.com/vishal07k/Projects/blob/main/myportfolio/images/Image1.jpg);
     }
     .header-text{
         margin-top: 100%;
